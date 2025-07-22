@@ -1,0 +1,15 @@
+[workspace]
+members = [
+    ".",                 # include this crate (main binary)
+    "proc_macro_count",
+    "proc_macro_try_from"
+]
+
+[package]
+name = "macro_practice"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+proc_macro_count = { path = "./proc_macro_count" }
+proc_macro_try_from = { path = "./proc_macro_try_from" }
